@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/abtka_logo_favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+Робота з файлами на мак.  Макбучна абетка.
+</title>
+  <meta description="
+Розглянемо файлові менеджери на на Mac, як створити папку, як знайти файл, як перемістити, видалити файл. Макбучна абетка - навчальний сайт для користувачів мак. Використовуйте Mac більш ефективно та продуктивно. 
+">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GQRF7XW9Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-2GQRF7XW9Z');
+</script>
+
+<body>
+  <div class="columns ">
+    <div class="column is-1  is-hidden-mobile"></div>
+    <div class="column is-7">
+        <!-- navigation menu -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start"> <!-- is-flex-direction-column -->
+        <a class="navbar-item" href="/">
+          Abtka.com
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link items-toggle">
+            Макбучна абетка
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="robota-z-textom-na-mac.html">
+                Робота з текстом на мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="robota-z-faylami-na-mac.html">
+                Робота з файлами на мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="robota-z-programami-na-mac.html">
+                Робота з програмами на мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="robota_z_foto_na_mac.html">
+                Робота з зображеннями на мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="robota_z_video_na_mac.html">
+                Робота з відео на мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="klaviatura_mac.html">
+                Клавіатура мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="jesti_na_mac_touchpad.html">
+                Тачпад мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="znimok_ekranu_na_mac.html">
+                Знімок екрану на мак
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="main_key_shortcuts_on_mac.html">
+                Комбінації клавіш, гарячі клавіші на мак
+            </a>
+            
+          </div>
+        </div>
+  
+        
+  
+      </div>
+    </div>
+  </nav>
+<!-- /navigation menu -->
+      <section class="section">
+        <div class="container">
+          <!-- <h1 class="title">
+        Abtka.com 
+      </h1><p class="subtitle">
+      перша айті допомога<strong></strong>!
+      </p><div class="tags are-medium"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Django-Rest-Framework</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Docker-compose</span><span class="tag">Git</span><span class="tag">Linux</span></div> -->
+          <div class="content">
+            <!-- <nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="#">Абетка макбука</a></li><li class="is-active"><a href="#" aria-current="page">Як зробити скнін</a></li></ul></nav> -->
+            <figure>
+              <img src="./images/abtka_logo.png">
+              <img src="./images/ukraine.png">
+            </figure>
+            <article>
+                
+                <section class="section">
+                    <div class="container">
+                      <h1 class="title">Робота з файлами на мак</h1>
+                      <p>У цій статті розглядається кілька основних питань з роботи з файлами на макбуці, зокрема:</p>
+                      <ul>
+                        <li><a href="#section1">Основи файлової системи на Mac: де зберігаються файли та як їх організувати.</a></li>
+                        <hr />
+                        <li><a href="#section2">Як знайти основну папку користувача в програмі файндер?</a></li>
+                        <hr />
+                        <li><a href="#section3">Як закріпити папку на бічній панелі Finder для швидкого доступу?</a></li>
+                        <hr />
+                        <li><a href="#poshuk_failiv">Пошук файлів на мак</a></li>
+                        <hr />
+                        <li><a href="#section4">Де зберігаються файли скачані з інтернета?</a></li>
+                        <hr />
+                        <li><a href="yak_stvority_papku_na_macbook.html">Як створити папку на макбуці?</a></li>
+                        <hr />
+                        <li><a href="yak_vidility_file_na_mac.html">Як виділити кілька файлів на макбуці?</a></li>
+                        <hr />
+                        <li><a href="how_to_delete_file_on_mac.html">Як видалити файл на макбуці?</a></li>
+                        <hr />
+                        <li><a href="#section8">Як відновити видалений файл зі смітника(корзини)?</a></li>
+                        <hr />
+                        <li><a href="#section9">Вбудований файловий менеджер Finder</a></li>
+                        <hr />
+                        <li><a href="#section10">Forklift - аналог TotalCommander на мак</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                 
+                  <hr>
+                  <section class="section" id="section1">
+                    <div class="container">
+                      <h2 class="subtitle">Основи файлової системи на Mac: де зберігаються файли та як їх організувати</h2>
+                      <p>Давайте поговоримо про файлову систему на Mac. Перш за все, на вашому робочому столі знаходиться значок Finder, що є програмою, яка допомагає вам знайти файли на вашому комп'ютері. Файли на Mac зберігаються в папках, а файли, які ви завантажуєте з Інтернету, зазвичай зберігаються в папці Завантаження.
+                        Окрім того, на Mac є спеціальні папки для фото, відео та музики, які допоможуть вам знайти ваші медіафайли швидко та легко. Але ви також можете створювати свої власні папки для організації файлів за вашими потребами.
+                        Важливо знати, що всі папки зберігаються в головній папці користувача, яку можна знайти у папці "Користувачі" (або "Users" у англомовних версіях). Таким чином, ви можете легко знайти та організувати всі ваші файли на вашому Mac.</p>
+                    </div>
+                  </section>
+                  <hr>
+                  <section class="section" id="section2">
+                    <div class="container">
+                      <h2 class="subtitle">Як знайти папку користувача в програмі файндер?</h2>
+                    <p>
+                        Відкрийте програму Finder,  виберіть пункт "Користувачі" у бічній панелі зліва. У цій папці будуть всі користувачі, які зареєстровані на вашому комп'ютері. Далі потрібно вибрати своє ім'я користувача і відкрити папку.
+                    </p>
+                    <p>
+                        Також є швидкий спосіб відкрити папку користувача, використовуючи комбінацію клавіш Shift+Command+H. Ця комбінація відкриє вікно з папкою користувача, де можна знайти всі основні папки, такі як Завантаження, Документи, Музика та інші.
+                    </p>
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section3">
+                    <div class="container">
+                      <h2 class="subtitle">Як закріпити папку на бічній панелі Finder для швидкого доступу?</h2>
+                        Якщо ви часто використовуєте папку, зручно буде закріпити її на бічній панелі програми Finder, для швидкого доступу.
+                        Розглянемо цю задачу на прикладі папки користувача. 
+                        <h3>Покрокова інструкція як закріпити папку на бічній панелі Finder:</h3>
+                        <ol>
+                            <li>Запустіть програму Finder.</li>
+                            <li>У лівій частині вікна Finder знайдіть папку "Користувачі" та відкрийте її.</li>
+                            <li>Відкрийте папку з вашим ім'ям користувача.</li>
+                            <li>Клацніть правою кнопкою миші на папці користувача.</li>
+                            <li>В контекстному меню виберіть опцію "Додати до бічної панелі".</li>
+                            <li>Тепер папка користувача з'явиться на боковій панелі Finder і буде доступна з будь-якої сторінки програми.</li>
+                            <li>Закріплення папки користувача на боковій панелі дозволить вам швидко доступатися до своїх особистих файлів та даних без необхідності кожного разу переходити до папки "Користувачі" та шукати свою папку.</li>
+                         </ol>
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="poshuk_failiv">
+                    <div class="container">
+                      <h2 class="subtitle">Пошук файлів на мак?</h2>
+                      <p><strong>Пошук Spotlight</strong> є вбудованою функцією на Mac, яка дозволяє швидко знайти будь-які файли на вашому пристрої. Щоб скористатись Spotlight, натисніть клавішу "Cmd" і "Пробіл" одночасно на клавіатурі, а потім введіть запит для пошуку. Можна шукати як за іменем файлу, так і за його вмістом.</p>
+                      <p><strong>Пошук в програмі Finder</strong> - пошук файлів на Mac можна здійснити за допомогою вбудованої програми Finder. У верхній частині екрана розміщено рядок пошуку, в який можна ввести ключові слова, імена файлів, розширення і т.д. 
+                        За допомогою розширеного пошуку можна знайти файли за датою, типом, розміром та іншими параметрами. 
+                        Також вікно пошуку можна відкрити за допомогою комбінації клавіш "Command + F"</p>
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section4">
+                    <div class="container">
+                      <h2 class="subtitle">Де зберігаються файли завантажені(скачані) з інтернета?</h2>
+                      <p>Завантажені файли можна знайти в папці "Завантаження" на бічній панелі Finder.</p>
+                       
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section5">
+                    <div class="container">
+                      <h2 class="subtitle">Як створити папку на макбуці?</h2>
+                      <p>Щоб створити папку на Mac, потрібно відкрити вікно Finder, вибрати місце, де потрібно створити папку, та натиснути "Файл" у верхньому меню, після чого вибрати "Створити нову папку".</p>
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section6">
+                    <div class="container">
+                      <h2 class="subtitle">Як виділити кілька файлів на макбуці?</h2>
+                      <p>Щоб виділити кілька файлів на Mac, потрібно натиснути та утримувати клавішу "Command" на клавіатурі та клацнути на файли, які потрібно виділити.</p>
+                       
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section7">
+                    <div class="container">
+                      <h2 class="subtitle">Як видалити файл на макбуці?</h2>
+                    <p>
+                      Щоб видалити файл на Mac, потрібно вибрати його та натиснути клавішу "Delete" на клавіатурі, або клацнути правою кнопкою миші та вибрати "Перемістити в смітник".
+                    
+                    </p>
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section8">
+                    <div class="container">
+                      <h2 class="subtitle">Як відновити видалений файл зі смітника(корзини)?</h2>
+                      <p>Щоб відновити видалений файл зі смітника (корзини) на Mac, потрібно відкрити смітник, вибрати файл, який потрібно відновити, та клацнути на нього правою кнопкою миші. Після цього виберіть "Повернути назад" у випадаючому меню.</p>
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section9">
+                    <div class="container">
+                      <h2 class="subtitle">Вбудований файловий менеджер Finder</h2>
+                      <p> це вбудований файловий менеджер на Mac, який допомагає користувачам організовувати та керувати своїми файлами та папками.</p>
+                       
+                    </div>
+                  </section>
+                  <hr />
+                  <section class="section" id="section10">
+                    <div class="container">
+                      <h2 class="subtitle">Forklift - аналог TotalCommander на мак</h2>
+                      <p>Forklift - це безкоштовна програма-менеджер файлів для Mac, яка може бути зручною для користувачів які звикли до Windows.
+                         Інтерфейс програми схожий на TotalCommander.  
+                         Forklift має подвійну панель, яка дозволяє переглядати та переміщувати файли між двома папками, а також підтримує роботу з декількома папками одночасно.
+                          Крім того, Forklift підтримує FTP протокол для передачі файлів на сервер.</p>
+                       
+                    </div>
+                  </section>
+
+                
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="column  is-hidden-mobile"></div>
+    <!-- navigation menu -->
+    <div class="nav" style="padding-top: 2em; padding-left: 2em; padding-right: 2em;">
+      <div class="message">
+        <div class="message-header">
+          <p> Про Abtka.com</p>
+        </div>
+        <div class="message-body">
+          <p>Привіт, користувачам макбуків, мене звати Дмитро. Рік тому я вперше придбав собі макбук після багатьох
+            років користування віндою. Я помітив що я мало користуюсь зручностями MAC OS і вирішив розібратись в магії
+            яблука. Я створив цей сайт Abtka.com щоб зрозумілою мовою допомогти вивчити зручні функції макбуку та щоб
+            взаємодія з мак приносила вам задоволення. </p>
+        </div>
+      </div>
+      <div class="container">
+        <h3 class="has-text-weight-bold">Основи користовання мак за категоріями:</h3>
+        <hr />
+       
+                  <ul>
+                    <li><a href="robota-z-textom-na-mac.html">
+                        Робота з текстом на мак
+                    </a></li>
+                    <hr />
+                    <li><a href="robota-z-faylami-na-mac.html">
+                        Робота з файлами на мак
+                    </a></li>
+                    <hr />
+                    <li><a href="robota-z-programami-na-mac.html">
+                        Робота з програмами на мак
+                    </a></li>
+                    <hr />
+                    <li><a href="robota_z_foto_na_mac.html">
+                        Робота з зображеннями на мак
+                    </a></li>
+                    <hr />
+                    <li><a href="robota_z_video_na_mac.html">
+                        Робота з відео на мак
+                    </a></li>
+                    <hr />
+                    <li><a href="klaviatura_mac.html">
+                        Клавіатура мак
+                    </a></li>
+                    <hr />
+                    <li><a href="jesti_na_mac_touchpad.html">
+                        Тачпад мак
+                    </a></li>
+                    <hr />
+                    <li><a href="znimok_ekranu_na_mac.html">
+                        Знімок екрану на мак
+                    </a></li>
+                    <hr />
+                    <li><a href="main_key_shortcuts_on_mac.html">
+                        Комбінації клавіш, гарячі клавіші на мак
+                    </a></li>
+                </ul>
+      </div>
+    </div>
+    <!-- /navigation menu -->
+  </div>
+  <footer class="footer ">
+    <div class="content has-text-centered">
+      <p> Abtka.com навчальний сайт для користувачів макбуків. </p>
+      <p> Зроблено в Україні, 2023 </p>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
