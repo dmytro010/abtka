@@ -3,3 +3,7 @@ body {
     line-height: 1.5;
     font-weight: 400;
 }
+
+footer img {
+    height: 5em;
+}
