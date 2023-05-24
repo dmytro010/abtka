@@ -7,3 +7,7 @@ body {
 footer img {
     height: 5em;
 }
+
+ul h4 {
+    margin-top: 0.5em;
+}
