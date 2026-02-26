@@ -2,223 +2,477 @@
 <html lang="uk">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="icon" href="images/abtka_logo_favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Показую як поставити @ собачку на мак (з зображенням)</title>
-  <meta description="Де знаходиться символ пошти " @ " на клавіатурі мак. Знак @ називають собачкою або равликом, він використовуються для написання email адреси.  Макбучна абетка - навчальний сайт для користувачів мак. Використовуйте Mac більш ефективно та продуктивно.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1952283419030703"
-     crossorigin="anonymous"></script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GQRF7XW9Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Як поставити @ (собачку, равлика) на MacBook — 2 способи | Abtka.com</title>
+  <meta name="description"
+    content="Знак @ на MacBook — собачка або равлик. Спосіб 1: Option+2 прямо на українській розкладці. Спосіб 2: Shift+2 на англійській. Покроково з фото.">
+  <meta property="og:title" content="Як поставити @ (собачку, равлика) на MacBook — 2 способи">
+  <meta property="og:description"
+    content="Знак @ на MacBook — собачка або равлик. Option+2 на українській або Shift+2 на англійській. Покроково з фото.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://abtka.com/iak-postaviti-znak-poshti-na-mak.html">
+  <link rel="canonical" href="https://abtka.com/iak-postaviti-znak-poshti-na-mak.html">
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'G-2GQRF7XW9Z');
-</script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #111;
+      background: #fff;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* ── Навігація ── */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .topbar-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #111;
+      text-decoration: none;
+    }
+
+    .topbar-logo img {
+      height: 26px;
+    }
+
+    .sitenav {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 0 24px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .sitenav a {
+      display: inline-block;
+      color: #555;
+      text-decoration: none;
+      font-size: 0.85rem;
+      padding: 10px 12px;
+    }
+
+    .sitenav a:hover {
+      color: #111;
+    }
+
+    /* ── Контент ── */
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .breadcrumb {
+      font-size: 0.78rem;
+      color: #999;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb a {
+      color: #999;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: #111;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    /* ── Клавіші ── */
+    .keys {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .key {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1.5px solid #bbb;
+      border-bottom: 3px solid #888;
+      border-radius: 7px;
+      padding: 6px 16px;
+      font-weight: 700;
+      font-size: 1rem;
+      min-width: 50px;
+      white-space: nowrap;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+    }
+
+    .key-plus {
+      color: #aaa;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .key-result {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-left: 4px;
+    }
+
+    /* ── Зображення ── */
+    .article-img {
+      width: 100%;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      display: block;
+      margin: 20px 0;
+    }
+
+    /* ── Примітка ── */
+    .note {
+      background: #f7f7f7;
+      border-left: 3px solid #ccc;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      color: #444;
+      border-radius: 0 6px 6px 0;
+      margin: 16px 0;
+    }
+
+    /* ── Розділювач ── */
+    .divider {
+      border: none;
+      border-top: 1px solid #ebebeb;
+      margin: 40px 0;
+    }
+
+    /* ── Таблиця ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 16px 0;
+    }
+
+    th {
+      border-bottom: 2px solid #111;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    td {
+      border-bottom: 1px solid #ebebeb;
+      padding: 10px 12px;
+    }
+
+    /* ── Пов'язані статті ── */
+    .related a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      text-decoration: none;
+      color: #111;
+      font-size: 0.92rem;
+    }
+
+    .related a:hover {
+      color: #555;
+    }
+
+    .related a:last-child {
+      border-bottom: none;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #111;
+      color: rgba(255, 255, 255, 0.5);
+      padding: 32px 24px 20px;
+      font-size: 0.82rem;
+    }
+
+    .footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    footer .logo {
+      font-weight: 800;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      width: 32px;
+      height: 32px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+    }
+
+    .social-icons a:hover {
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .social-icons img {
+      width: 15px;
+      height: 15px;
+      filter: brightness(10);
+    }
+
+    .footer-copy {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 32px 16px 60px;
+      }
+
+      .topbar {
+        padding: 12px 16px;
+      }
+
+      .sitenav {
+        padding: 0 16px;
+      }
+    }
+  </style>
+</head>
 
 <body>
-  <div class="columns ">
-    <div class="column is-1  is-hidden-mobile"></div>
-    <div class="column is-7">
-        <!-- navigation menu -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+
+  <header>
+    <div class="topbar">
+      <a class="topbar-logo" href="/">
+        <img src="./images/abtka_logo.png" alt="Abtka">Abtka.com
       </a>
+      <img src="./images/ukraine.png" alt="🇺🇦" height="20">
     </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start"> <!-- is-flex-direction-column -->
-        <a class="navbar-item" href="/">
-          Abtka.com
+    <nav class="sitenav">
+      <a href="robota-z-textom-na-mac.html">Текст</a>
+      <a href="robota-z-faylami-na-mac.html">Файли</a>
+      <a href="robota-z-programami-na-mac.html">Програми</a>
+      <a href="robota_z_foto_na_mac.html">Фото</a>
+      <a href="robota_z_video_na_mac.html">Відео</a>
+      <a href="klaviatura_mac.html">Клавіатура</a>
+      <a href="jesti_na_mac_touchpad.html">Трекпед</a>
+      <a href="znimok_ekranu_na_mac.html">Скріншот</a>
+      <a href="main_key_shortcuts_on_mac.html">Гарячі клавіші</a>
+      <a href="poradi-brauzer-safari-na-mak.html">Safari</a>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <div class="breadcrumb">
+      <a href="/">Головна</a> › <a href="klaviatura_mac.html">Клавіатура Mac</a> › Знак @
+    </div>
+
+    <h1>Як поставити @ (собачку, равлика) на MacBook</h1>
+    <p class="subtitle">
+      Знак пошти @ — він же собачка, він же равлик. Є два способи надрукувати його на MacBook — залежно від того, яка
+      зараз активна розкладка.
+    </p>
+
+
+    <!-- СПОСІБ 1 -->
+    <h2>Спосіб 1 — українська розкладка (не перемикатись!)</h2>
+
+    <img src="images/klaviatura_mac_sobachka.webp" alt="Де знаходиться символ @ на клавіатурі Mac — клавіші Option і 2"
+      class="article-img">
+
+    <p>Якщо зараз активна українська розкладка — нікуди перемикатись не потрібно. Затисни <strong>Option ⌥</strong> і
+      натисни <strong>2</strong>:</p>
+
+    <div class="keys">
+      <span class="key">Option ⌥</span>
+      <span class="key-plus">+</span>
+      <span class="key">2</span>
+      <span class="key-result">@</span>
+    </div>
+
+    <div class="note">
+      💡 Клавіша <strong>Option</strong> на Mac — це аналог <strong>Alt</strong> на Windows. Знаходиться ліворуч від
+      пробілу.
+    </div>
+
+
+    <hr class="divider">
+
+
+    <!-- СПОСІБ 2 -->
+    <h2>Спосіб 2 — англійська розкладка</h2>
+
+    <img src="images/znak_poshta_na_mac.webp" alt="Де знаходиться символ @ на клавіатурі Mac — клавіші Shift і 2"
+      class="article-img">
+
+    <p>Якщо клавіатура переключена на англійську (EN) — затисни <strong>Shift ⇧</strong> і натисни <strong>2</strong>:
+    </p>
+
+    <div class="keys">
+      <span class="key">Shift ⇧</span>
+      <span class="key-plus">+</span>
+      <span class="key">2</span>
+      <span class="key-result">@</span>
+    </div>
+
+    <p>Якщо залишишся на українській і натиснеш Shift+2, замість @ з'явиться <strong>«</strong>. Як змінити мову — <a
+        href="yak_peremknuti_movu_na_mac.html">читай тут</a>.</p>
+
+
+    <hr class="divider">
+
+
+    <!-- ПОРІВНЯННЯ -->
+    <h2>Порівняння способів</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Спосіб</th>
+          <th>Розкладка</th>
+          <th>Комбінація</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>✓ Рекомендований</td>
+          <td>🇺🇦 Українська</td>
+          <td><strong>Option ⌥ + 2</strong></td>
+        </tr>
+        <tr>
+          <td>Альтернативний</td>
+          <td>🇬🇧 Англійська</td>
+          <td><strong>Shift ⇧ + 2</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <hr class="divider">
+
+
+    <!-- ДЕ ВИКОРИСТОВУЮТЬ @ -->
+    <h2>Де потрібен знак @?</h2>
+
+    <ul style="padding-left:20px; margin-bottom:16px;">
+      <li>в електронній адресі: <code>ім'я<strong>@</strong>gmail.com</code></li>
+      <li>в соцмережах для тегу користувача: <code><strong>@</strong>abtkacom</code></li>
+      <li>в коді та програмуванні</li>
+    </ul>
+
+
+    <hr class="divider">
+
+
+    <!-- ІНШІ СИМВОЛИ -->
+    <h2>Інші символи на клавіатурі Mac</h2>
+    <div class="related">
+      <a href="yak_postavity_apostrof_na_mac.html">Як поставити апостроф ʼ на Mac</a>
+      <a href="yak_postavity_komu_na_mac.html">Як поставити кому , на Mac</a>
+      <a href="pokazuiu-iak-postaviti-nizhnie-pidkreslennia-na-mak.html">Як поставити нижнє підкреслення _ на Mac</a>
+      <a href="iak-postaviti-lapki-na-mak.html">Як поставити лапки «» на Mac</a>
+      <a href="iak-postaviti-znak-nomer-na-mak.html">Як поставити знак номера № на Mac</a>
+      <a href="iak-dodati-simvol-ievro-na-makbutsi.html">Як поставити символ євро € на Mac</a>
+      <a href="klaviatura_mac.html">Всі символи клавіатури Mac →</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="logo">Abtka.com</div>
+      <p>Навчальний сайт для користувачів MacBook. Зроблено в Україні 🇺🇦</p>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/channel/UC105o4WQ8npQP4g2YjPk14g" target="_blank">
+          <img src="./images/youtube_logo.svg" alt="YouTube">
         </a>
-  
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link items-toggle">
-            Макбучна абетка
-          </a>
-  
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="robota-z-textom-na-mac.html">
-                Робота з текстом на мак
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="robota-z-faylami-na-mac.html">
-                Робота з файлами на мак
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="robota-z-programami-na-mac.html">
-                Робота з програмами на мак
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="robota_z_foto_na_mac.html">
-                Робота з зображеннями на мак
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="robota_z_video_na_mac.html">
-                Робота з відео на мак
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="klaviatura_mac.html">
-              Вивчаємо клавіатуру мак. Розташування клавіш та їх функції.
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="jesti_na_mac_touchpad.html">
-              Жести трекпеду макбук. Як зручно користуватись макбуком без мишки.
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="znimok_ekranu_na_mac.html">
-                Знімок екрану на мак
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="main_key_shortcuts_on_mac.html">
-                Комбінації клавіш, гарячі клавіші на мак
-            </a>
-            <hr class="navbar-divider">
-            <a href="poradi-brauzer-safari-na-mak.html">
-                Як зробити Сафарі своїм улюблений браузером на мак? Багато лайвхаків..
-            </a>
-            
-            
-          </div>
-        </div>
-  
-        
-  
+        <a href="https://www.instagram.com/abtkacom" target="_blank">
+          <img src="./images/insta_logo.svg" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@dmytroabtka?is_from_webapp=1&sender_device=pc" target="_blank">
+          <img src="./images/tiktok_logo.svg" alt="TikTok">
+        </a>
+        <a href="https://t.me/abtkacom" target="_blank">
+          <img src="./images/telegram_logo.svg" alt="Telegram">
+        </a>
       </div>
-    </div>
-  </nav>
-<!-- /navigation menu -->
-      <section class="section">
-        <div class="container">
-          <!-- <h1 class="title">
-        Abtka.com 
-      </h1><p class="subtitle">
-      перша айті допомога<strong></strong>!
-      </p><div class="tags are-medium"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Django-Rest-Framework</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Docker-compose</span><span class="tag">Git</span><span class="tag">Linux</span></div> -->
-          <div class="content">
-            <!-- <nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="#">Абетка макбука</a></li><li class="is-active"><a href="#" aria-current="page">Як зробити скнін</a></li></ul></nav> -->
-            <figure>
-              <img src="./images/abtka_logo.png">
-              <img src="./images/ukraine.png">
-            </figure>
-            <article>
-                
-                <h1>Показую як поставити @ собачку на мак (з зображенням)</h1>
-                <p>Часто при наборі тексту у нових користувачів макбуків виникають проблеми з пошуком деяких букв та символів на клавіатурі мак. Тож я вирішив показати на зображенні де знаходиться символ пошти равлик - " @ ". </p>
-
-<p>Щоб надрукувати електронну адресу наприклад: test@abtka.com необхідно знати де знаходиться символ пошти @, який ще називають собачка або равлик. </p>
-
-<h2>Символ пошти (собачка / равлик) " @ " на мак (для англійської мови клавіатури)</h2>
-
-<figure style="margin-bottom: 1em;">
-<img src="images/znak_poshta_na_mac.webp" width="500" alt="Схема клавіатури, де знаходиться символ пошти(равлик/собачка)">
-</figure>
-
-<p>Для того щоб поставити символ пошти необхідно спочатку перемкнути мову клавіатури на англійську( <a href="yak_peremknuti_movu_na_mac.html">як змінити мову клавіатури</a> ) Щоб поставити символ равлик @ треба затиснути клавішу <strong>SHIFT</strong> (<span><img src="images/shift.webp"  alt="кнопка SHIFT на мак" style="height: 3em;"></span>) та натиснути кнопку <strong>2</strong> (<span><img src="images/2.webp"  alt="кнопка 2 на мак" style="height: 3em;"></span>), не відпускаючи клавішу SHIFT.</p>
-
-<p>Дізнайтесь розміщення інших символів на клавіатурі макбуку на сторінці: <a href="/klaviatura_mac.html">Клавіатура мак</a>.</p>
-
-                
-                
-            </article>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="column  is-hidden-mobile"></div>
-    <!-- navigation menu -->
-    <div class="nav" style="padding-top: 2em; padding-left: 2em; padding-right: 2em;">
-      <div class="message">
-        <div class="message-header">
-          <p> Про Abtka.com</p>
-        </div>
-        <div class="message-body">
-          <p>Привіт, користувачам макбуків, мене звати Дмитро. Рік тому я вперше придбав собі макбук після багатьох
-            років користування віндою. Я помітив що я мало користуюсь зручностями MAC OS і вирішив розібратись в магії
-            яблука. Я створив цей сайт Abtka.com щоб зрозумілою мовою допомогти вивчити зручні функції макбуку та щоб
-            взаємодія з мак приносила вам задоволення. </p>
-        </div>
-      </div>
-      <div class="container">
-        <h3 class="has-text-weight-bold">Основи користовання мак за категоріями:</h3>
-        <hr />
-       
-                  <ul>
-                    <li><a href="robota-z-textom-na-mac.html">
-                        Робота з текстом на мак
-                    </a></li>
-                    <hr />
-                    <li><a href="robota-z-faylami-na-mac.html">
-                        Робота з файлами на мак
-                    </a></li>
-                    <hr />
-                    <li><a href="robota-z-programami-na-mac.html">
-                        Робота з програмами на мак
-                    </a></li>
-                    <hr />
-                    <li><a href="robota_z_foto_na_mac.html">
-                        Робота з зображеннями на мак
-                    </a></li>
-                    <hr />
-                    <li><a href="robota_z_video_na_mac.html">
-                        Робота з відео на мак
-                    </a></li>
-                    <hr />
-                    <li><a href="klaviatura_mac.html">
-                      Вивчаємо клавіатуру мак. Розташування клавіш та їх функції.
-                    </a></li>
-                    <hr />
-                    <li><a href="jesti_na_mac_touchpad.html">
-                    Жести трекпеду макбук. Як зручно користуватись макбуком без мишки.
-                    </a></li>
-                    <hr />
-                    <li><a href="znimok_ekranu_na_mac.html">
-                        Знімок екрану на мак
-                    </a></li>
-                    <hr />
-                    <li><a href="main_key_shortcuts_on_mac.html">
-                        Комбінації клавіш, гарячі клавіші на мак
-                    </a></li>
-                    <hr />
-                    <li>
-                      <a href="poradi-brauzer-safari-na-mak.html">
-                        Як зробити Сафарі своїм улюблений браузером на мак? Багато лайвхаків..
-                    </a>
-                    </li>
-                    
-                </ul>
-      </div>
-    </div>
-    <!-- /navigation menu -->
-  </div>
-  <footer class="footer ">
-    <div class="content has-text-centered">
-      <p>Дивіться відео інструкції та поради в наших соцмережах:</p>
-      <figure style="margin-bottom: 1em;">
-        <span>
-          <a href="https://www.youtube.com/channel/UC105o4WQ8npQP4g2YjPk14g"><img src="./images/youtube_logo.svg"></a>
-          <a href="https://www.instagram.com/abtkacom"><img src="./images/insta_logo.svg"></a>
-          <a href="https://www.tiktok.com/@dmytroabtka?is_from_webapp=1&sender_device=pc"><img src="./images/tiktok_logo.svg"></a>
-          <a href="https://t.me/abtkacom"><img src="./images/telegram_logo.svg"></a>
-        </span>                   
-      </figure>
-      <p> Abtka.com навчальний сайт для користувачів макбуків. </p>
-      <p> Зроблено в Україні, 2023 </p>
+      <div class="footer-copy">© 2023–2026 Abtka.com — навчальний сайт для користувачів MacBook</div>
     </div>
   </footer>
-  <script src="scripts/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Як поставити @ на Mac",
+    "description": "Два способи надрукувати знак @ на MacBook: Option+2 на українській розкладці або Shift+2 на англійській.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Спосіб 1: Option+2 (українська розкладка)",
+        "text": "Залиш українську розкладку. Затисни Option (⌥) та натисни 2."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Спосіб 2: Shift+2 (англійська розкладка)",
+        "text": "Переключи розкладку на англійську. Затисни Shift (⇧) та натисни 2."
+      }
+    ]
+  }
+  </script>
+
 </body>
 
 </html>
