@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="{{ asset_prefix }}images/abtka_logo_favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ meta_title }}</title>
+  {% if meta_description %}
+  <meta name="description" content="{{ meta_description }}">
+  {% endif %}
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:type" content="{{ og_type }}">
+  <meta property="og:site_name" content="Abtka.com">
+  <meta property="og:title" content="{{ meta_title }}">
+  {% if meta_description %}
+  <meta property="og:description" content="{{ meta_description }}">
+  {% endif %}
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ meta_title }}">
+  {% if meta_description %}
+  <meta name="twitter:description" content="{{ meta_description }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ og_image }}">
+  <link rel="stylesheet" href="{{ asset_prefix }}css/modern.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GQRF7XW9Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2GQRF7XW9Z');
+  </script>
+  {% if json_ld %}
+  <script type="application/ld+json">{{ json_ld | safe }}</script>
+  {% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ home_href }}" aria-label="Abtka.com головна">
+        <span class="brand-mark">Abtka</span>
+        <span class="brand-subtitle">макбучна абетка</span>
+      </a>
+      <nav class="site-nav" aria-label="Основна навігація">
+        {% for item in nav_items %}
+        <a href="{{ item.href }}">{{ item.label }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  {% block page %}{% endblock %}
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        <p>Abtka.com - ваша перша айті допомога для MacBook.</p>
+        <p>Зроблено в Україні, 2026.</p>
+      </div>
+
+      <div class="social-links" aria-label="Соцмережі">
+        {% for item in social_links %}
+        <a href="{{ item.href }}" aria-label="{{ item.label }}">
+          <img src="{{ asset_prefix }}{{ item.icon }}" alt="{{ item.label }}">
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

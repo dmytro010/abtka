@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/abtka_logo_favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Як очистити пам&#39;ять Docker на Mac: повний гайд | Abtka.com</title>
+  <meta name="description" content="Інструкція з очищення дискового простору, який займає Docker на macOS. Як зменшити файл Docker.raw та видалити непотрібні контейнери й образи.">
+  <link rel="canonical" href="https://abtka.com/yak-zvilnyty-mistse-docker-mac.html">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Abtka.com">
+  <meta property="og:title" content="Як очистити пам&#39;ять Docker на Mac: повний гайд | Abtka.com">
+  <meta property="og:description" content="Інструкція з очищення дискового простору, який займає Docker на macOS. Як зменшити файл Docker.raw та видалити непотрібні контейнери й образи.">
+  <meta property="og:url" content="https://abtka.com/yak-zvilnyty-mistse-docker-mac.html">
+  <meta property="og:image" content="https://abtka.com/images/abtka_logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Як очистити пам&#39;ять Docker на Mac: повний гайд | Abtka.com">
+  <meta name="twitter:description" content="Інструкція з очищення дискового простору, який займає Docker на macOS. Як зменшити файл Docker.raw та видалити непотрібні контейнери й образи.">
+  <meta name="twitter:image" content="https://abtka.com/images/abtka_logo.png">
+  <link rel="stylesheet" href="css/modern.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GQRF7XW9Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2GQRF7XW9Z');
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"Як очистити пам'ять Docker на Mac: повний гайд | Abtka.com","url":"https://abtka.com/yak-zvilnyty-mistse-docker-mac.html","inLanguage":"uk","publisher":{"@type":"Organization","name":"Abtka.com","url":"https://abtka.com","logo":{"@type":"ImageObject","url":"https://abtka.com/images/abtka_logo.png"}},"description":"Інструкція з очищення дискового простору, який займає Docker на macOS. Як зменшити файл Docker.raw та видалити непотрібні контейнери й образи.","mainEntityOfPage":"https://abtka.com/yak-zvilnyty-mistse-docker-mac.html"}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Abtka.com головна">
+        <span class="brand-mark">Abtka</span>
+        <span class="brand-subtitle">макбучна абетка</span>
+      </a>
+      <nav class="site-nav" aria-label="Основна навігація">
+        <a href="index.html#guides">Гайди</a>
+        <a href="index.html#about">Про сайт</a>
+      </nav>
+    </div>
+  </header>
+
+<main class="article-shell">
+  <div class="container article-layout">
+    <article class="paper article-paper">
+      <div class="article-meta">
+        <p class="eyebrow">Стаття для розробників на Mac</p>
+        <a class="article-backlink" href="robota-z-programami-na-mac.html">Повернутися: Робота з програмами на мак</a>
+      </div>
+
+      <header class="article-header">
+        <h1>Як очистити пам&#39;ять Docker на Mac: повний гайд</h1>
+      </header>
+
+      <div class="article-body">
+        <p>
+
+Розробники часто стикаються з тим, що Docker займає 60, 80 або навіть 128 ГБ на диску, хоча в ньому запущено лише один маленький контейнер.
+
+Це стається через те, що Docker створює віртуальний диск, який поступово роздувається, але не стискається автоматично.
+
+</p>
+
+<section class="article-section">
+
+<h2>Спосіб 1: Швидке очищення через Terminal</h2>
+
+<p>
+
+Якщо вам потрібно швидко видалити всі невикористовувані контейнери, мережі, образи-сироти і томи, відкрийте <strong>Terminal</strong> і виконайте:
+
+</p>
+
+<div class="code-block" role="region" aria-label="Команда Docker">
+
+<code>docker system prune -a --volumes</code>
+
+</div>
+
+<p class="article-note">
+
+Обережно: ця команда видалить усі образи, які зараз не використовуються жодним активним контейнером.
+
+</p>
+
+</section>
+
+<section class="article-section">
+
+<h2>Спосіб 2: Зменшити ліміт диска в Docker Desktop</h2>
+
+<p>
+
+Це найважливіший крок. Навіть якщо Docker майже порожній, файл <code>Docker.raw</code> може залишатися великим, якщо в налаштуваннях дозволено занадто багато місця.
+
+</p>
+
+<ol class="article-steps">
+
+<li>Відкрийте <strong>Docker Desktop</strong>.</li>
+
+<li>Натисніть <strong>Settings</strong>.</li>
+
+<li>Перейдіть у <strong>Resources</strong> → <strong>Advanced</strong>.</li>
+
+<li>Знайдіть параметр <strong>Disk image size</strong>.</li>
+
+<li>Встановіть адекватний ліміт, наприклад 32 або 64 ГБ.</li>
+
+<li>Натисніть <strong>Apply & Restart</strong>.</li>
+
+</ol>
+
+<figure class="article-figure">
+
+<img src="images/docker_desktop_resources_mockup.png" alt="Налаштування ресурсів Docker Desktop на Mac">
+
+<figcaption>У цьому розділі можна обмежити, скільки місця Docker має право займати на диску.</figcaption>
+
+</figure>
+
+<div class="article-callout article-callout-warning">
+
+<strong>Важливо:</strong> якщо ви різко зменшуєте ліміт, Docker може пересоздати disk image. Перед цим варто зберегти важливі дані у волюмах або зробити резервну копію.
+
+</div>
+
+</section>
+
+<section class="article-section">
+
+<h2>Спосіб 3: Очистити дані через інтерфейс Docker Desktop</h2>
+
+<p>
+
+Якщо не хочеться використовувати Terminal, частину зайвих даних можна прибрати через інтерфейс.
+
+</p>
+
+<ol class="article-steps">
+
+<li>Відкрийте <strong>Docker Desktop</strong>.</li>
+
+<li>Перейдіть у розділ <strong>Troubleshoot</strong>.</li>
+
+<li>Знайдіть опцію <strong>Clean / Purge data</strong>.</li>
+
+<li>Виберіть, що саме потрібно очистити, і підтвердьте видалення.</li>
+
+</ol>
+
+</section>
+
+<section class="article-section">
+
+<h2>Де лежить файл Docker.raw</h2>
+
+<p>
+
+Якщо хочете перевірити файл вручну через Finder, зазвичай він знаходиться тут:
+
+</p>
+
+<div class="code-block" role="region" aria-label="Шлях до Docker.raw">
+
+<code>~/Library/Containers/com.docker.docker/Data/vms/0/data/Docker.raw</code>
+
+</div>
+
+<p>
+
+Щоб швидко перейти до цієї папки, у Finder натисніть <a href="command-shift-g-finder.html"><strong>Cmd + Shift + G</strong></a> і вставте шлях.
+
+</p>
+
+</section>
+
+<section class="article-section article-section-last">
+
+<h2>Що варто зробити в першу чергу</h2>
+
+<p>
+
+Найкраща послідовність така: спочатку очистіть непотрібні контейнери й образи, потім зменште <strong>Disk image size</strong>, а вже після цього перевірте, скільки місця реально повернулося.
+
+</p>
+
+<p>
+
+Так Docker не буде непомітно забирати десятки гігабайтів, а ваш Mac залишиться швидким і передбачуваним у роботі.
+
+</p>
+
+</section>
+      </div>
+    </article>
+
+    <aside class="paper article-aside" aria-label="Корисні переходи">
+      <p class="section-label">Ще корисно</p>
+      <h2>Сусідні нотатки</h2>
+      <ul class="aside-links">
+        <li><a href="yak-ochistiti-pamiat-na-mac.html">Загальне очищення Mac</a></li>
+        <li><a href="yak_primusovo_zavershiti_programu.html">Примусове закриття програм</a></li>
+        <li><a href="robota-z-programami-na-mac.html">Інші гайди по програмах</a></li>
+      </ul>
+    </aside>
+  </div>
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        <p>Abtka.com - ваша перша айті допомога для MacBook.</p>
+        <p>Зроблено в Україні, 2026.</p>
+      </div>
+
+      <div class="social-links" aria-label="Соцмережі">
+        <a href="https://www.youtube.com/channel/UC105o4WQ8npQP4g2YjPk14g" aria-label="YouTube">
+          <img src="images/youtube_logo.svg" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/abtkacom" aria-label="Instagram">
+          <img src="images/insta_logo.svg" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@dmytroabtka" aria-label="TikTok">
+          <img src="images/tiktok_logo.svg" alt="TikTok">
+        </a>
+        <a href="https://t.me/abtkacom" aria-label="Telegram">
+          <img src="images/telegram_logo.svg" alt="Telegram">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block page %}
+<main id="top">
+  <section class="hero">
+    <div class="container">
+      <div class="paper hero-paper">
+        <p class="eyebrow">Нотатки для тих, хто хоче швидко подружитися з macOS</p>
+        <h1>Прості інструкції для MacBook, без шуму та зайвої складності</h1>
+        <p class="hero-copy">
+          Корисні записи, короткі пояснення і зрозумілі дії, до яких хочеться повертатися.
+        </p>
+
+        <div class="hero-actions" aria-label="Швидкий доступ">
+          <a class="primary-link" href="#guides">Перейти до гайдів</a>
+          <a class="secondary-link" href="{{ featured_link.href }}">{{ featured_link.label }}</a>
+        </div>
+
+        <ul class="hero-notes" aria-label="Переваги сайту">
+          {% for note in hero_notes %}
+          <li>{{ note }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section-intro" aria-label="Вступ">
+    <div class="section-head">
+      <p class="section-label">Корисні записи</p>
+      <h2 id="guides">Виберіть тему і відкрийте потрібну нотатку</h2>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="notes-grid">
+      {% for card in cards %}
+      <article class="paper note-card">
+        <div class="note-topline">{{ "%02d"|format(loop.index) }}</div>
+        <h3><a href="{{ card.href }}">{{ card.title }}</a></h3>
+        <p>{{ card.description }}</p>
+        <ul class="note-list">
+          {% for link in card.links %}
+          <li{% if link.accent %} class="note-list-item-accent"{% endif %}>
+            <a href="{{ link.href }}">{{ link.label }}</a>
+            {% if link.badge %}
+            <span class="note-flag">{{ link.badge }}</span>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="about" class="container about-section">
+    <div class="paper about-paper">
+      <p class="section-label">Про сайт</p>
+      <h2>Abtka.com це сторінка з корисними записами про MacBook</h2>
+      {% for paragraph in about_paragraphs %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+{% endblock %}

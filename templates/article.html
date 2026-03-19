@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block page %}
+<main class="article-shell">
+  <div class="container article-layout">
+    <article class="paper article-paper">
+      <div class="article-meta">
+        <p class="eyebrow">{{ eyebrow }}</p>
+        {% if backlink %}
+        <a class="article-backlink" href="{{ backlink.href }}">{{ backlink.label }}</a>
+        {% endif %}
+      </div>
+
+      <header class="article-header">
+        <h1>{{ article_title }}</h1>
+        {% if article_lead %}
+        <p class="article-lead">{{ article_lead }}</p>
+        {% endif %}
+      </header>
+
+      <div class="article-body">
+        {{ article_body | safe }}
+      </div>
+    </article>
+
+    {% if aside_links %}
+    <aside class="paper article-aside" aria-label="Корисні переходи">
+      <p class="section-label">Ще корисно</p>
+      <h2>Сусідні нотатки</h2>
+      <ul class="aside-links">
+        {% for link in aside_links %}
+        <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+    {% endif %}
+  </div>
+</main>
+{% endblock %}
