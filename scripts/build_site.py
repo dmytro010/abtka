@@ -70,6 +70,7 @@ INDEX_CARDS = [
         "title": "Клавіатура",
         "description": "Мова, символи, підсвітка і комбінації клавіш без зайвого технічного шуму.",
         "links": [
+            {"href": "klaviatura_mac.html", "label": "Розташування клавіш"},
             {"href": "yak_peremknuti_movu_na_mac.html", "label": "Зміна мови"},
             {"href": "yak_postavity_apostrof_na_mac.html", "label": "Апостроф та символи"},
             {"href": "vimknuti-pidsvitku-klaviaturi-makbuku.html", "label": "Керування підсвіткою"},
@@ -107,6 +108,90 @@ CATEGORY_PAGES = {
     "keyboard": {"href": "klaviatura_mac.html", "label": "Клавіатура Mac"},
     "safari": {"href": "poradi-brauzer-safari-na-mak.html", "label": "Поради по Safari"},
     "media": {"href": "robota_z_foto_na_mac.html", "label": "Медіа та система"},
+}
+
+TOP_SEARCHES = [
+    {"href": "iak-postaviti-znak-poshti-na-mak.html", "label": "Як поставити знак пошти @ на Mac", "meta": "334 кліки"},
+    {"href": "iak-postaviti-lapki-na-mak.html", "label": "Як поставити лапки на Mac", "meta": "221 клік"},
+    {"href": "yak_postavity_komu_na_mac.html", "label": "Як поставити кому на Mac", "meta": "182 кліки"},
+    {"href": "yak_postavity_apostrof_na_mac.html", "label": "Як поставити апостроф на Mac", "meta": "172 кліки"},
+    {"href": "pokazuiu-iak-postaviti-slesh-na-mak.html", "label": "Як поставити слеш / на Mac", "meta": "162 кліки"},
+    {"href": "pokazuiu-iak-postaviti-nizhnie-pidkreslennia-na-mak.html", "label": "Як поставити нижнє підкреслення _ на Mac", "meta": "160 кліків"},
+    {"href": "iak-postaviti-znak-nomer-na-mak.html", "label": "Як поставити символ номер № на Mac", "meta": "151 клік"},
+    {"href": "pokazuiu-iak-postaviti-znak-pitannia-na-mak.html", "label": "Як поставити знак питання ? на Mac", "meta": "76 кліків"},
+    {"href": "safari-na-mak-iak-pereglianuti-istoriiu.html", "label": "Як переглянути історію Safari на Mac", "meta": "69 кліків"},
+    {"href": "iak-postaviti-tire-na-mak.html", "label": "Як поставити тире на Mac", "meta": "66 кліків"},
+]
+
+SPECIAL_ARTICLE_CONTENT = {
+    "klaviatura_mac.html": {
+        "title": "Вивчаємо клавіатуру мак. Розташування, функції клавіш",
+        "lead": "Клавіатура Mac має свої особливості: інші позначення клавіш, інші місця для символів і багато корисних дій, які неочевидні після Windows.",
+        "body": """
+<p>На цій сторінці зібрані найважливіші матеріали про розташування клавіш на Mac, популярні символи і базові функції клавіатури, до яких найчастіше повертаються нові користувачі.</p>
+
+<figure>
+  <img src="images/klaviatura_mac.webp" width="500" alt="Клавіатура макбуку">
+  <figcaption>Загальний вигляд клавіатури MacBook і розташування основних клавіш.</figcaption>
+</figure>
+
+<h2>Популярні питання щодо розташування клавіш на Mac</h2>
+<ul>
+  <li><a href="yak_postavity_dvokrapku_na_mac.html">Як поставити двокрапку ":" на Mac</a></li>
+  <li><a href="yak_postavity_apostrof_na_mac.html">Як поставити апостроф "ʼ" на Mac</a></li>
+  <li><a href="yak_postavity_komu_na_mac.html">Як поставити кому "," на Mac</a></li>
+  <li><a href="yak_postavity_krapku_na_mac.html">Як поставити крапку "." на Mac</a></li>
+  <li><a href="iak-postaviti-krapku-z-komoiu-na-mak.html">Як поставити крапку з комою ";" на Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-znak-pitannia-na-mak.html">Як поставити знак питання "?" на Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-vidsotok-na-mak.html">Як поставити знак відсотка "%" на Mac</a></li>
+  <li><a href="iak-postaviti-znak-nomer-na-mak.html">Як поставити символ номер "№" на Mac</a></li>
+  <li><a href="iak-postaviti-znak-poshti-na-mak.html">Як поставити знак пошти "@" на Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-nizhnie-pidkreslennia-na-mak.html">Як поставити нижнє підкреслення "_" на Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-znak-plius-na-mak.html">Як поставити плюс "+" на Mac</a></li>
+  <li><a href="iak-postaviti-dorivniuie-na-mak.html">Як поставити знак "=" на Mac</a></li>
+  <li><a href="iak-postaviti-tire-na-mak.html">Як поставити тире "-" на Mac</a></li>
+  <li><a href="iak-postaviti-zirochku-na-mak.html">Як поставити зірочку "*" на Mac</a></li>
+  <li><a href="iak-postaviti-lapki-na-mak.html">Як поставити лапки на Mac</a></li>
+  <li><a href="iak-postaviti-duzhki-na-mak.html">Як поставити дужки на Mac</a></li>
+  <li><a href="bukva_yi_na_mac.html">Де буква "Ї" на клавіатурі Mac</a></li>
+  <li><a href="iak-dodati-smail-na-makbutsi.html">Як відкрити клавіатуру смайлів і емодзі на Mac</a></li>
+  <li><a href="yak_postavity_symbol_hrivni_na_mac.html">Символ гривні "₴" на клавіатурі Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-simvol-dolaru-na-mak.html">Як поставити символ долара "$" на Mac</a></li>
+  <li><a href="iak-dodati-simvol-ievro-na-makbutsi.html">Як поставити символ євро "€" на Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-slesh-na-mak.html">Як поставити слеш "/" на Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-znak-menshe-na-mak.html">Як поставити знак менше "&lt;" на Mac</a></li>
+  <li><a href="pokazuiu-iak-postaviti-znak-bilshe-na-mak.html">Як поставити знак більше "&gt;" на Mac</a></li>
+</ul>
+
+<h2>Базові клавіші та що вони роблять</h2>
+<p><strong>Command</strong> — головна клавіша для більшості швидких дій на Mac. Саме з нею працюють копіювання, вставка, відкриття нової вкладки, пошук і десятки інших комбінацій.</p>
+<p><strong>Option</strong> — допомагає вводити додаткові символи і відкривати альтернативні дії в macOS.</p>
+<p><strong>Control</strong> — використовується в системних скороченнях і контекстних діях. Наприклад, `Control + Space` часто перемикає мову або відкриває налаштування джерел вводу.</p>
+<p><strong>Enter</strong> — підтверджує дію, створює новий рядок і часто працює як кнопка "ОК" у формах та діалогах.</p>
+<p><strong>Tab</strong> — переходить між полями вводу і допомагає рухатися по інтерфейсу без мишки.</p>
+<p><strong>Caps Lock</strong> — вмикає великі літери. На частині Mac його також можна переналаштувати для зміни мови.</p>
+<p><strong>Delete</strong> — видаляє символ ліворуч від курсора. Для видалення праворуч часто використовують `Fn + Delete`.</p>
+<p><strong>Fn</strong> — змінює поведінку верхнього ряду клавіш і бере участь у навігаційних комбінаціях.</p>
+
+<h2>Що роблять клавіші F1-F12 на MacBook</h2>
+<ul>
+  <li><strong>F1</strong> — зниження яскравості дисплея.</li>
+  <li><strong>F2</strong> — підвищення яскравості дисплея.</li>
+  <li><strong>F3</strong> — відкриття Mission Control.</li>
+  <li><strong>F4</strong> — відкриття Launchpad.</li>
+  <li><strong>F5</strong> — зменшення яскравості підсвітки клавіатури.</li>
+  <li><strong>F6</strong> — підвищення яскравості підсвітки клавіатури.</li>
+  <li><strong>F7</strong> — попередній трек.</li>
+  <li><strong>F8</strong> — пауза або відтворення.</li>
+  <li><strong>F9</strong> — наступний трек.</li>
+  <li><strong>F10</strong> — зменшення гучності.</li>
+  <li><strong>F11</strong> — вимкнення звуку.</li>
+  <li><strong>F12</strong> — підвищення гучності.</li>
+</ul>
+
+<p>Якщо хочеш швидше розібратися з клавіатурою в цілому, відкрий також <a href="main_key_shortcuts_on_mac.html">головні гарячі клавіші Mac</a> і <a href="yak_peremknuti_movu_na_mac.html">гайд про перемикання мови</a>.</p>
+""",
+    }
 }
 
 
@@ -387,6 +472,7 @@ def build_index(env: Environment) -> None:
         og_type="website",
         json_ld=build_json_ld("website", page_path, meta_title, meta_description),
         hero_notes=["Коротко", "Зрозуміло", "Українською"],
+        top_searches=TOP_SEARCHES,
         featured_link={"href": "yak-ochistiti-pamiat-na-mac.html", "label": "Що нового: очищення пам'яті"},
         cards=INDEX_CARDS,
         about_paragraphs=[
@@ -401,13 +487,19 @@ def build_index(env: Environment) -> None:
 def build_article(env: Environment, relative_path: Path) -> None:
     absolute_path = ROOT / relative_path
     text = absolute_path.read_text(encoding="utf-8")
+    special_content = SPECIAL_ARTICLE_CONTENT.get(relative_path.name)
     title_hint = clean_seo_title(extract_title(text))
-    modern_parts = extract_modern_page_parts(text)
-    if modern_parts:
-        article_title, article_lead, article_body = modern_parts
+    if special_content:
+        article_title = special_content["title"]
+        article_lead = special_content["lead"]
+        article_body = special_content["body"]
     else:
-        article_html = extract_main_article(text)
-        article_title, article_lead, article_body = extract_article_heading(article_html)
+        modern_parts = extract_modern_page_parts(text)
+        if modern_parts:
+            article_title, article_lead, article_body = modern_parts
+        else:
+            article_html = extract_main_article(text)
+            article_title, article_lead, article_body = extract_article_heading(article_html)
 
     if not article_title or article_title == "Нотатка Abtka.com":
         article_title = title_hint or article_title

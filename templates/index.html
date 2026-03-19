@@ -32,6 +32,38 @@
     </div>
   </section>
 
+  <section class="container popular-section" aria-label="Популярні пошуки">
+    <div class="paper popular-paper">
+      <div class="section-head">
+        <p class="section-label">Популярні пошуки</p>
+        <h2>Відвідувачі найчастіше шукають</h2>
+      </div>
+
+      <ul class="popular-list">
+        {% for link in top_searches[:5] %}
+        <li>
+          <a href="{{ link.href }}">{{ link.label }}</a>
+          <span>{{ link.meta }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+
+      {% if top_searches|length > 5 %}
+      <details class="popular-more">
+        <summary>Показати більше</summary>
+        <ul class="popular-list popular-list-more">
+          {% for link in top_searches[5:] %}
+          <li>
+            <a href="{{ link.href }}">{{ link.label }}</a>
+            <span>{{ link.meta }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% endif %}
+    </div>
+  </section>
+
   <section class="container">
     <div class="notes-grid">
       {% for card in cards %}
