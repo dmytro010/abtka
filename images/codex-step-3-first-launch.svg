@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Крок 3: Відкрийте Codex і увійдіть</title>
+  <desc id="desc">Схематична ілюстрація першого запуску Codex з кнопкою входу.</desc>
+  <rect width="1280" height="760" fill="#f4f4f1"/>
+  <rect x="190" y="70" width="900" height="620" rx="34" fill="#ffffff" stroke="#d8d8d2" stroke-width="2"/>
+  <text x="252" y="150" font-family="Arial, sans-serif" font-size="28" fill="#111" font-weight="700">Крок 3. Відкрийте Codex і увійдіть через свій акаунт</text>
+  <text x="252" y="192" font-family="Arial, sans-serif" font-size="20" fill="#444">Після першого запуску зазвичай достатньо натиснути кнопку входу.</text>
+  <rect x="252" y="256" width="776" height="286" rx="28" fill="#f8f8f5" stroke="#e1e1da"/>
+  <text x="572" y="334" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#111" font-weight="700">Welcome to Codex</text>
+  <text x="572" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#555">Sign in with your ChatGPT account to continue</text>
+  <rect x="420" y="426" width="304" height="52" rx="26" fill="#111"/>
+  <text x="572" y="459" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#fff" font-weight="700">Continue with ChatGPT</text>
+  <rect x="410" y="416" width="324" height="72" rx="32" fill="none" stroke="#c84f3d" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="252" y="608" font-family="Arial, sans-serif" font-size="18" fill="#444">Після входу Codex попросить вибрати папку або проєкт, з яким він працюватиме.</text>
+</svg>

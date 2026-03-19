@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Крок 2: Перетягніть Codex у Applications</title>
+  <desc id="desc">Схематична ілюстрація вікна встановлення Codex на macOS.</desc>
+  <rect width="1280" height="760" fill="#f4f4f1"/>
+  <rect x="130" y="90" width="1020" height="580" rx="30" fill="#ffffff" stroke="#d8d8d2" stroke-width="2"/>
+  <rect x="130" y="90" width="1020" height="56" rx="30" fill="#f1f1ec"/>
+  <text x="186" y="126" font-family="Arial, sans-serif" font-size="18" fill="#555">Codex.dmg</text>
+  <text x="176" y="202" font-family="Arial, sans-serif" font-size="28" fill="#111" font-weight="700">Крок 2. Перетягніть Codex у Applications</text>
+  <text x="176" y="240" font-family="Arial, sans-serif" font-size="20" fill="#444">Це звичний спосіб встановлення програм на Mac.</text>
+  <rect x="220" y="312" width="240" height="210" rx="28" fill="#111"/>
+  <text x="278" y="428" font-family="Arial, sans-serif" font-size="40" fill="#fff" font-weight="700">Codex</text>
+  <path d="M520 418h170" stroke="#c84f3d" stroke-width="10" stroke-linecap="round"/>
+  <path d="M660 384l40 34-40 34" fill="none" stroke="#c84f3d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="760" y="300" width="220" height="240" rx="30" fill="#4f83c2"/>
+  <rect x="796" y="346" width="148" height="122" rx="18" fill="#7fb0e8"/>
+  <text x="790" y="576" font-family="Arial, sans-serif" font-size="30" fill="#fff" font-weight="700">Applications</text>
+  <text x="176" y="606" font-family="Arial, sans-serif" font-size="18" fill="#444">Після копіювання Codex з'явиться в папці “Програми”.</text>
+</svg>

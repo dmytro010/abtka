@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Крок 1: Сторінка Codex і кнопка Download for macOS</title>
+  <desc id="desc">Схематична ілюстрація сторінки Codex з кнопкою завантаження для macOS.</desc>
+  <rect width="1280" height="760" fill="#f4f4f1"/>
+  <rect x="48" y="52" width="1184" height="656" rx="28" fill="#ffffff" stroke="#d8d8d2" stroke-width="2"/>
+  <rect x="48" y="52" width="1184" height="60" rx="28" fill="#f1f1ec"/>
+  <circle cx="92" cy="82" r="8" fill="#d76c5d"/>
+  <circle cx="118" cy="82" r="8" fill="#dfb44b"/>
+  <circle cx="144" cy="82" r="8" fill="#7eae72"/>
+  <rect x="210" y="68" width="520" height="28" rx="14" fill="#ffffff" stroke="#d8d8d2"/>
+  <text x="232" y="87" font-family="Arial, sans-serif" font-size="16" fill="#555">openai.com/codex/get-started</text>
+  <text x="106" y="178" font-family="Arial, sans-serif" font-size="28" fill="#111" font-weight="700">Крок 1. Відкрийте офіційну сторінку Codex</text>
+  <text x="106" y="216" font-family="Arial, sans-serif" font-size="20" fill="#444">Найпростіше для більшості людей: знайти кнопку “Download for macOS”.</text>
+  <rect x="106" y="278" width="440" height="44" rx="22" fill="#111"/>
+  <text x="134" y="307" font-family="Arial, sans-serif" font-size="20" fill="#fff" font-weight="700">Download for macOS</text>
+  <rect x="98" y="268" width="456" height="64" rx="30" fill="none" stroke="#c84f3d" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="612" y="300" font-family="Arial, sans-serif" font-size="20" fill="#c84f3d" font-weight="700">Натисніть саме сюди</text>
+  <rect x="106" y="374" width="1020" height="220" rx="24" fill="#f8f8f5" stroke="#e1e1da"/>
+  <text x="136" y="428" font-family="Arial, sans-serif" font-size="22" fill="#111" font-weight="700">Що побачить користувач</text>
+  <text x="136" y="470" font-family="Arial, sans-serif" font-size="18" fill="#444">1. Назву Codex</text>
+  <text x="136" y="504" font-family="Arial, sans-serif" font-size="18" fill="#444">2. Кнопку завантаження для macOS</text>
+  <text x="136" y="538" font-family="Arial, sans-serif" font-size="18" fill="#444">3. Короткий опис застосунку</text>
+  <text x="136" y="572" font-family="Arial, sans-serif" font-size="18" fill="#444">4. Без потреби щось налаштовувати вручну на цьому етапі</text>
+</svg>

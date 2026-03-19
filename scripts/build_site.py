@@ -73,6 +73,7 @@ INDEX_CARDS = [
             {"href": "shtuchnyi-intelekt-dlia-mac.html", "label": "Всі AI-гайди"},
             {"href": "yak-vstanovyty-codex-na-mac.html", "label": "Як встановити Codex на Mac", "accent": True, "badge": "нове"},
             {"href": "3-idei-vykorystannia-codex-na-mac-dlia-netekhnichnykh-liudei.html", "label": "3 ідеї використання Codex для нетехнічних людей"},
+            {"href": "chym-vidrizniaietsia-codex-ta-chatgpt.html", "label": "Чим відрізняється Codex та ChatGPT"},
             {"href": "yak-vykorystovuvaty-shi-na-macbook-u-shchodenykh-zadachakh.html", "label": "Як використовувати ШІ на MacBook щодня"},
             {"href": "5-korysnykh-zadach-dlia-chatgpt-na-macbook.html", "label": "5 корисних задач для ChatGPT на MacBook"},
             {"href": "yak-vstanovyty-antigravity-mac.html", "label": "Як встановити Antigravity на Mac"},
@@ -217,6 +218,7 @@ SPECIAL_ARTICLE_CONTENT = {
 <ul>
   <li><a href="yak-vstanovyty-codex-na-mac.html">Як встановити Codex на Mac</a></li>
   <li><a href="3-idei-vykorystannia-codex-na-mac-dlia-netekhnichnykh-liudei.html">3 ідеї використання Codex на Mac для нетехнічних людей</a></li>
+  <li><a href="chym-vidrizniaietsia-codex-ta-chatgpt.html">Чим відрізняється Codex та ChatGPT</a></li>
   <li><a href="yak-vykorystovuvaty-shi-na-macbook-u-shchodenykh-zadachakh.html">Як використовувати ШІ на MacBook у щоденних задачах</a></li>
   <li><a href="5-korysnykh-zadach-dlia-chatgpt-na-macbook.html">5 корисних задач для ChatGPT на MacBook</a></li>
   <li><a href="yak-vstanovyty-antigravity-mac.html">Як встановити Antigravity на Mac</a></li>
