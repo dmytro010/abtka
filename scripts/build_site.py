@@ -66,6 +66,16 @@ INDEX_CARDS = [
         ],
     },
     {
+        "href": "shtuchnyi-intelekt-dlia-mac.html",
+        "title": "Штучний інтелект для Mac",
+        "description": "Практичні гайди про AI-інструменти на Mac: встановлення, запуск і перші кроки без зайвої технічної плутанини.",
+        "links": [
+            {"href": "shtuchnyi-intelekt-dlia-mac.html", "label": "Всі AI-гайди"},
+            {"href": "yak-vstanovyty-codex-na-mac.html", "label": "Як встановити Codex на Mac", "accent": True, "badge": "нове"},
+            {"href": "3-idei-vykorystannia-codex-na-mac-dlia-netekhnichnykh-liudei.html", "label": "3 ідеї використання Codex для нетехнічних людей"},
+        ],
+    },
+    {
         "href": "klaviatura_mac.html",
         "title": "Клавіатура",
         "description": "Мова, символи, підсвітка і комбінації клавіш без зайвого технічного шуму.",
@@ -105,6 +115,7 @@ CATEGORY_PAGES = {
     "text": {"href": "robota-z-textom-na-mac.html", "label": "Робота з текстом на мак"},
     "files": {"href": "robota-z-faylami-na-mac.html", "label": "Робота з файлами на мак"},
     "apps": {"href": "robota-z-programami-na-mac.html", "label": "Робота з програмами на мак"},
+    "ai": {"href": "shtuchnyi-intelekt-dlia-mac.html", "label": "Штучний інтелект для Mac"},
     "keyboard": {"href": "klaviatura_mac.html", "label": "Клавіатура Mac"},
     "safari": {"href": "poradi-brauzer-safari-na-mak.html", "label": "Поради по Safari"},
     "media": {"href": "robota_z_foto_na_mac.html", "label": "Медіа та система"},
@@ -192,6 +203,26 @@ SPECIAL_ARTICLE_CONTENT = {
 <p>Якщо хочеш швидше розібратися з клавіатурою в цілому, відкрий також <a href="main_key_shortcuts_on_mac.html">головні гарячі клавіші Mac</a> і <a href="yak_peremknuti_movu_na_mac.html">гайд про перемикання мови</a>.</p>
 """,
     }
+    ,
+    "shtuchnyi-intelekt-dlia-mac.html": {
+        "title": "Штучний інтелект для Mac",
+        "lead": "Окремий розділ для тих, хто хоче користуватися AI-інструментами на Mac спокійно, зрозуміло і без зайвої технічної плутанини.",
+        "body": """
+<p>На цій сторінці зібрані матеріали про інструменти штучного інтелекту для Mac: як їх встановити, як запустити і з чого краще почати, якщо ви хочете працювати швидше або зручніше.</p>
+
+<h2>З чого почати</h2>
+<ul>
+  <li><a href="yak-vstanovyty-codex-na-mac.html">Як встановити Codex на Mac</a></li>
+  <li><a href="3-idei-vykorystannia-codex-na-mac-dlia-netekhnichnykh-liudei.html">3 ідеї використання Codex на Mac для нетехнічних людей</a></li>
+</ul>
+
+<h2>Для чого це може бути корисно</h2>
+<p>AI-інструменти на Mac найчастіше використовують для роботи з текстом, ідеями, кодом, пошуком рішень і повсякденними робочими завданнями. Якщо все налаштовано правильно, вони економлять час і зменшують кількість рутинних дій.</p>
+
+<h2>Що далі</h2>
+<p>Цей розділ буде розширюватися. Сюди логічно додавати нові гайди про Codex, ChatGPT, локальні AI-інструменти, роботу з Terminal і корисні сценарії для Mac.</p>
+""",
+    },
 }
 
 
@@ -344,6 +375,8 @@ def extract_main_article(text: str) -> str:
 
 def infer_category(file_name: str) -> str:
     lower = file_name.lower()
+    if "codex" in lower or "shtuchnyi-intelekt" in lower or "ai" in lower:
+        return "ai"
     if "safari" in lower:
         return "safari"
     if "docker" in lower:
