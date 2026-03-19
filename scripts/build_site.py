@@ -68,7 +68,7 @@ INDEX_CARDS = [
     {
         "href": "shtuchnyi-intelekt-dlia-mac.html",
         "title": "Штучний інтелект для Mac",
-        "description": "Практичні гайди про AI-інструменти на Mac: встановлення, запуск і перші кроки без зайвої технічної плутанини.",
+        "description": "Практичні гайди про ШІ на MacBook, ChatGPT на Mac і AI для Mac: встановлення, запуск і щоденні сценарії використання.",
         "links": [
             {"href": "shtuchnyi-intelekt-dlia-mac.html", "label": "Всі AI-гайди"},
             {"href": "yak-vstanovyty-codex-na-mac.html", "label": "Як встановити Codex на Mac", "accent": True, "badge": "нове"},
@@ -208,10 +208,10 @@ SPECIAL_ARTICLE_CONTENT = {
     }
     ,
     "shtuchnyi-intelekt-dlia-mac.html": {
-        "title": "Штучний інтелект для Mac",
-        "lead": "Окремий розділ для тих, хто хоче користуватися AI-інструментами на Mac спокійно, зрозуміло і без зайвої технічної плутанини.",
+        "title": "ШІ на MacBook і AI для Mac",
+        "lead": "Окремий розділ для тих, хто хоче користуватися ШІ на MacBook, ChatGPT на Mac і іншими AI-інструментами спокійно, зрозуміло і без зайвої технічної плутанини.",
         "body": """
-<p>На цій сторінці зібрані матеріали про інструменти штучного інтелекту для Mac: як їх встановити, як запустити і з чого краще почати, якщо ви хочете працювати швидше або зручніше.</p>
+<p>На цій сторінці зібрані матеріали про штучний інтелект для Mac, ШІ на MacBook і AI для Mac: як встановити інструменти, як їх запустити і з чого краще почати, якщо ви хочете працювати швидше або зручніше.</p>
 
 <h2>З чого почати</h2>
 <ul>
@@ -222,8 +222,8 @@ SPECIAL_ARTICLE_CONTENT = {
   <li><a href="yak-vstanovyty-antigravity-mac.html">Як встановити Antigravity на Mac</a></li>
 </ul>
 
-<h2>Для чого це може бути корисно</h2>
-<p>AI-інструменти на Mac найчастіше використовують для роботи з текстом, ідеями, кодом, пошуком рішень і повсякденними робочими завданнями. Якщо все налаштовано правильно, вони економлять час і зменшують кількість рутинних дій.</p>
+<h2>ChatGPT на MacBook, Codex і інші AI-інструменти: для чого вони корисні</h2>
+<p>AI-інструменти на Mac найчастіше використовують для роботи з текстом, ідеями, кодом, пошуком рішень і повсякденними робочими завданнями. Якщо все налаштовано правильно, ChatGPT на MacBook, Codex та інші інструменти економлять час і зменшують кількість рутинних дій.</p>
 
 <h2>Що далі</h2>
 <p>Цей розділ буде розширюватися. Сюди логічно додавати нові гайди про Codex, ChatGPT, локальні AI-інструменти, роботу з Terminal і корисні сценарії саме для повсякденного використання на MacBook.</p>
@@ -287,14 +287,15 @@ def extract_title(text: str) -> str:
 
 def extract_description(text: str) -> str:
     patterns = [
-        r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']',
-        r'<meta\s+content=["\'](.*?)["\']\s+name=["\']description["\']',
-        r'<meta\s+description=["\'](.*?)["\']',
+        r'<meta\s+name=(["\'])description\1\s+content=(["\'])(.*?)\2',
+        r'<meta\s+content=(["\'])(.*?)\1\s+name=(["\'])description\3',
+        r'<meta\s+description=(["\'])(.*?)\1',
     ]
     for pattern in patterns:
         match = re.search(pattern, text, flags=re.S | re.I)
         if match:
-            return " ".join(strip_tags(match.group(1)).split())
+            value = match.group(3) if len(match.groups()) >= 3 else match.group(2)
+            return " ".join(strip_tags(value).split())
     return ""
 
 
