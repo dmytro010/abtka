@@ -73,6 +73,9 @@ INDEX_CARDS = [
             {"href": "shtuchnyi-intelekt-dlia-mac.html", "label": "Всі AI-гайди"},
             {"href": "yak-vstanovyty-codex-na-mac.html", "label": "Як встановити Codex на Mac", "accent": True, "badge": "нове"},
             {"href": "3-idei-vykorystannia-codex-na-mac-dlia-netekhnichnykh-liudei.html", "label": "3 ідеї використання Codex для нетехнічних людей"},
+            {"href": "yak-vykorystovuvaty-shi-na-macbook-u-shchodenykh-zadachakh.html", "label": "Як використовувати ШІ на MacBook щодня"},
+            {"href": "5-korysnykh-zadach-dlia-chatgpt-na-macbook.html", "label": "5 корисних задач для ChatGPT на MacBook"},
+            {"href": "yak-vstanovyty-antigravity-mac.html", "label": "Як встановити Antigravity на Mac"},
         ],
     },
     {
@@ -214,13 +217,16 @@ SPECIAL_ARTICLE_CONTENT = {
 <ul>
   <li><a href="yak-vstanovyty-codex-na-mac.html">Як встановити Codex на Mac</a></li>
   <li><a href="3-idei-vykorystannia-codex-na-mac-dlia-netekhnichnykh-liudei.html">3 ідеї використання Codex на Mac для нетехнічних людей</a></li>
+  <li><a href="yak-vykorystovuvaty-shi-na-macbook-u-shchodenykh-zadachakh.html">Як використовувати ШІ на MacBook у щоденних задачах</a></li>
+  <li><a href="5-korysnykh-zadach-dlia-chatgpt-na-macbook.html">5 корисних задач для ChatGPT на MacBook</a></li>
+  <li><a href="yak-vstanovyty-antigravity-mac.html">Як встановити Antigravity на Mac</a></li>
 </ul>
 
 <h2>Для чого це може бути корисно</h2>
 <p>AI-інструменти на Mac найчастіше використовують для роботи з текстом, ідеями, кодом, пошуком рішень і повсякденними робочими завданнями. Якщо все налаштовано правильно, вони економлять час і зменшують кількість рутинних дій.</p>
 
 <h2>Що далі</h2>
-<p>Цей розділ буде розширюватися. Сюди логічно додавати нові гайди про Codex, ChatGPT, локальні AI-інструменти, роботу з Terminal і корисні сценарії для Mac.</p>
+<p>Цей розділ буде розширюватися. Сюди логічно додавати нові гайди про Codex, ChatGPT, локальні AI-інструменти, роботу з Terminal і корисні сценарії саме для повсякденного використання на MacBook.</p>
 """,
     },
 }
@@ -375,7 +381,7 @@ def extract_main_article(text: str) -> str:
 
 def infer_category(file_name: str) -> str:
     lower = file_name.lower()
-    if "codex" in lower or "shtuchnyi-intelekt" in lower or "ai" in lower:
+    if any(token in lower for token in ("codex", "shtuchnyi-intelekt", "chatgpt", "shi-na-macbook", "antigravity", "ai")):
         return "ai"
     if "safari" in lower:
         return "safari"
