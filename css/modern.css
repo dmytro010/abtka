@@ -2,15 +2,15 @@
   --bg: #f4f4f1;
   --paper: #fcfcf9;
   --paper-strong: #ffffff;
-  --text: #111111;
-  --muted: #5e5e57;
+  --text: #191919;
+  --muted: #50504b;
   --line: rgba(17, 17, 17, 0.12);
   --line-strong: rgba(17, 17, 17, 0.22);
   --accent: #c84f3d;
   --accent-soft: rgba(200, 79, 61, 0.12);
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.05);
-  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
-  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --font-sans: "SF Pro Text", "Segoe UI", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Georgia", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
   --radius: 24px;
 }
 
@@ -28,9 +28,11 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: var(--font-sans);
+  font-size: 1.0625rem;
   color: var(--text);
   background: linear-gradient(180deg, #f8f8f4 0%, var(--bg) 100%);
-  line-height: 1.6;
+  line-height: 1.72;
+  letter-spacing: 0.002em;
 }
 
 img {
@@ -78,9 +80,9 @@ a:focus-visible {
 
 .brand-mark {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.56rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.015em;
 }
 
 .brand-subtitle {
@@ -94,7 +96,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 .site-nav a,
@@ -133,9 +135,9 @@ a:focus-visible {
 .eyebrow,
 .section-label,
 .note-topline {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -145,20 +147,20 @@ a:focus-visible {
 .about-paper h2,
 .note-card h3 {
   font-family: var(--font-serif);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.018em;
 }
 
 .hero h1 {
   max-width: 760px;
   margin: 14px 0 18px;
-  font-size: clamp(2.6rem, 5vw, 4.8rem);
-  line-height: 0.98;
+  font-size: clamp(2.5rem, 4.6vw, 4.4rem);
+  line-height: 1.04;
 }
 
 .hero-copy {
   max-width: 620px;
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.14rem;
   color: var(--muted);
 }
 
@@ -242,8 +244,8 @@ a:focus-visible {
 .section-head h2,
 .about-paper h2 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  line-height: 1.03;
+  font-size: clamp(2rem, 3.6vw, 2.9rem);
+  line-height: 1.12;
 }
 
 .notes-grid {
@@ -319,8 +321,8 @@ a:focus-visible {
 
 .note-card h3 {
   margin: 12px 0 10px;
-  font-size: 2rem;
-  line-height: 1.05;
+  font-size: 1.92rem;
+  line-height: 1.14;
 }
 
 .note-card p,
@@ -433,15 +435,16 @@ a:focus-visible {
 .article-header h1 {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  line-height: 0.98;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.2rem, 4.4vw, 3.7rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
 }
 
 .article-lead {
   margin: 18px 0 0;
   max-width: 760px;
-  font-size: 1.08rem;
+  font-size: 1.16rem;
+  line-height: 1.74;
   color: var(--muted);
 }
 
@@ -452,7 +455,8 @@ a:focus-visible {
 .article-body p,
 .article-body li,
 .article-body figcaption {
-  font-size: 1.02rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 .article-body a {
@@ -486,25 +490,25 @@ a:focus-visible {
 .article-section h2 {
   margin: 0 0 12px;
   font-family: var(--font-serif);
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-size: clamp(1.6rem, 2.8vw, 2.05rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
 }
 
 .article-body h3,
 .article-body h4 {
   margin: 28px 0 10px;
   font-family: var(--font-serif);
-  line-height: 1.12;
-  letter-spacing: -0.025em;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
 }
 
 .article-body h3 {
-  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+  font-size: clamp(1.42rem, 2.4vw, 1.75rem);
 }
 
 .article-body h4 {
-  font-size: 1.15rem;
+  font-size: 1.22rem;
 }
 
 .article-section-last {
@@ -697,7 +701,7 @@ a:focus-visible {
 
 .footer-copy {
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.98rem;
 }
 
 .footer-copy p {
@@ -762,7 +766,7 @@ a:focus-visible {
 
   .site-nav {
     gap: 14px;
-    font-size: 0.9rem;
+    font-size: 0.96rem;
   }
 
   .hero {
@@ -781,11 +785,11 @@ a:focus-visible {
   }
 
   .note-card h3 {
-    font-size: 1.7rem;
+    font-size: 1.62rem;
   }
 
   .article-header h1 {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(2.05rem, 8vw, 3rem);
   }
 
   .note-list li {
