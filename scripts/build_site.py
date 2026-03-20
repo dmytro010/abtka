@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import argparse
 import html
 import json
 import re
+import subprocess
 from datetime import datetime, UTC
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -640,7 +642,53 @@ def write_robots() -> None:
     (ROOT / "robots.txt").write_text(robots, encoding="utf-8")
 
 
+def git_has_changes() -> bool:
+    result = subprocess.run(
+        ["git", "status", "--short"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return bool(result.stdout.strip())
+
+
+def git_commit_and_push(commit_message: str, push: bool) -> None:
+    if not git_has_changes():
+        print("No git changes to commit.")
+        return
+
+    subprocess.run(["git", "add", "-A"], cwd=ROOT, check=True)
+    subprocess.run(["git", "commit", "-m", commit_message], cwd=ROOT, check=True)
+    print(f'Created commit: "{commit_message}"')
+
+    if push:
+        subprocess.run(["git", "push", "origin", "main"], cwd=ROOT, check=True)
+        print("Pushed to origin/main.")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Build the Abtka static site.")
+    parser.add_argument(
+        "--commit",
+        action="store_true",
+        help="Create a git commit after the site build finishes.",
+    )
+    parser.add_argument(
+        "--push",
+        action="store_true",
+        help="Push origin/main after creating a git commit. Implies --commit.",
+    )
+    parser.add_argument(
+        "--commit-message",
+        default="site update",
+        help='Commit message to use with --commit. Default: "site update".',
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
         autoescape=select_autoescape(["html"]),
@@ -669,6 +717,9 @@ def main() -> None:
         print(f"Skipped {len(skipped)} pages:")
         for item, reason in skipped:
             print(f"- {item}: {reason}")
+
+    if args.commit or args.push:
+        git_commit_and_push(args.commit_message, push=args.push)
 
 
 if __name__ == "__main__":

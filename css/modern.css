@@ -450,6 +450,7 @@ a:focus-visible {
 
 .article-body {
   padding-top: 24px;
+  overflow-wrap: anywhere;
 }
 
 .article-body p,
@@ -574,6 +575,12 @@ a:focus-visible {
   height: auto;
 }
 
+.article-body img,
+.article-body .article-img {
+  max-width: 100%;
+  height: auto;
+}
+
 .article-figure figcaption {
   padding: 14px 16px 16px;
   color: var(--muted);
@@ -633,6 +640,9 @@ a:focus-visible {
 
 .article-body table {
   width: 100%;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-collapse: collapse;
   border-top: 1px solid var(--line);
 }
@@ -647,6 +657,25 @@ a:focus-visible {
 
 .article-body th {
   font-weight: 700;
+}
+
+.article-body hr.divider {
+  margin: 12px 0 2px;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+.article-body .related {
+  display: grid;
+  gap: 10px;
+}
+
+.article-body .related a {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(17, 17, 17, 0.03);
 }
 
 .article-body iframe {
@@ -830,5 +859,18 @@ a:focus-visible {
 
   .social-links {
     flex-wrap: wrap;
+  }
+
+  .article-body th,
+  .article-body td {
+    min-width: 132px;
+    padding: 10px 8px;
+  }
+
+  .article-body .key,
+  .article-body kbd,
+  .article-body .path {
+    min-height: 1.85rem;
+    padding: 0.12rem 0.46rem;
   }
 }
